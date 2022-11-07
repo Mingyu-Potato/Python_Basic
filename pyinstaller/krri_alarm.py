@@ -63,4 +63,5 @@ if __name__ == '__main__':
     percent = 0.7   # 0.0(min) ~ 1.0(max)
     run()
 
-# pyinstaller -F krri_alarm.py --hidden-import playsound:schedule:pycaw:comtypes:ctypes --add-data='./music/*;music' --add-data='./icon/*;icon' -i="icon/krri.ico" 
+# window용(ubuntu도 명령어는 다르지만 가능)
+# pyinstaller -F krri_alarm.py --hidden-import playsound:schedule:pycaw:comtypes --add-data "music/*;music" --add-data "*.ico;." -i="krri.ico" 
